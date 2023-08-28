@@ -6,4 +6,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home),
-] + static(settings.STATIC_URL)
+    path('submitform/', views.submitform),
+] 

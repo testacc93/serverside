@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-     <title>Serverside</title>
+     <title>Servernest- Your thoughts, Our canvas</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -29,7 +29,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
-            <a class="navbar-brand" href="index.html">Server Side</a>
+            <a class="navbar-brand" href="index.html">ServerNest</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -98,11 +98,15 @@ https://www.tooplate.com/view/2119-gymso-fitness
                 <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
                     <h2 class="mb-3 text-white" data-aos="fade-up">Let's script your future together</h2>
 
-                    <h6 class="mb-4 text-white" data-aos="fade-up">Whether you're a startup looking to establish your online presence or an established business seeking to revamp your digital identity, Serverside is your trusted partner in turning your aspirations into reality. Let us guide you through the digital landscape and embark on a journey of growth and success.</h6>
+                    <h6 class="mb-4 text-white" data-aos="fade-up">Whether you're a startup looking to establish your online presence or an established business seeking to revamp your digital identity, Servernest is your trusted partner in turning your aspirations into reality. Let us guide you through the digital landscape and embark on a journey of growth and success.</h6>
 
                     <p data-aos="fade-up" data-aos-delay="200"></p>
 
-                    <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm">Enquire now</a>
+                    {% comment %} <a href="#contact" class="btn custom-btn bg-color mt-3 smoothScroll">Enquire now</a>
+                    
+                    <a href="#contact" class="nav-link smoothScroll">Contact</a> {% endcomment %}
+
+
                 </div>
 
                 <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
@@ -135,7 +139,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     <div class="row">
 
                             <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
-                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, we are Serverside</h2>
+                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, we are Servernest</h2>
 
                                 <p data-aos="fade-up" data-aos-delay="400">Welcome to our IT services for website designing and development! We specialize in crafting captivating and functional online experiences that cater to your unique business needs. Our expert team combines innovative design with cutting-edge technology to create websites that not only look stunning but also perform seamlessly.</p>
 
@@ -144,7 +148,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
                                 
                             <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
                                 <div class="team-thumb">
-                                    <img src="{% static "images/team/pall.jpg" %}" class="img-fluid" alt="designer">
+                                    <img width= "250px" src="{% static "images/team/pall.jpg" %}" class="img-fluid" alt="designer">
 
                                     <div class="team-info d-flex flex-column">
 
@@ -161,7 +165,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
                             <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
                                 <div class="team-thumb">
-                                    <img src="{% static "images/team/man.png" %}" class="img-fluid" alt="developer">
+                                    <img width= "250px" src="{% static "images/team/man.png" %}" class="img-fluid" alt="developer">
 
                                     <div class="team-info d-flex flex-column">
 
@@ -218,7 +222,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
                                         {% comment %} <span class="class-price">$50</span> {% endcomment %}
 
-                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                        <p class="mt-3">Elevating brands through visionary design, one pixel at a time.
+                                            Crafting digital experiences that resonate visually and captivate audiences.</p>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +239,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
                                         {% comment %} <span class="class-price">$66</span> {% endcomment %}
 
-                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                        <p class="mt-3">Sculpting seamless user journeys with cutting-edge frontend expertise.
+                                            Bridging design and technology for engaging, responsive digital interfaces.</p>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +256,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
                                         {% comment %} <span class="class-price">$75</span> {% endcomment %}
 
-                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                        <p class="mt-3">Powering your digital ambition with robust backend solutions.
+                                            Seamlessly integrating technology to fuel your website's performance</p>
                                     </div>
                                 </div>
                             </div>
@@ -378,15 +385,17 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     <div class="ml-auto col-lg-5 col-md-6 col-12">
                         <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
 
-                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
-                            <input type="text" class="form-control" name="cf-name" placeholder="Name">
+                        <div class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                            <input type="text" id="name" class="form-control" name="cf-name" placeholder="Name">
 
-                            <input type="email" class="form-control" name="cf-email" placeholder="Email">
+                            <input type="email" id="email" class="form-control" name="cf-email" placeholder="Email">
 
-                            <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+                            <textarea id="message" class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
 
-                            <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
-                        </form>
+                            <button onclick="submitform()" class="form-control" id="submit-button" name="submit">Send Message</button>
+                            {% comment %} <div>sasjj</div> {% endcomment %}
+                            <div id="alert" class="" style="display:none" role="alert">Success</div>
+                        </div>
                     </div>
 
                     <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
@@ -417,16 +426,16 @@ https://www.tooplate.com/view/2119-gymso-fitness
                <div class="row">
 
                     <div class="ml-auto col-lg-4 col-md-5">
-                        <p class="copyright-text">Copyright &copy; 2023 Serverside
+                        <p class="copyright-text">Copyright &copy; 2023 Servernest
                     </div>
 
                     <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
                         <p class="mr-4">
                             <i class="fa fa-envelope-o mr-1"></i>
-                            <a href="#">serverside735@gmail.com</a>
+                            <a href="#">servernest735@gmail.com</a>
                         </p>
 
-                        <p><i class="fa fa-phone mr-1"></i>+91 8856911982</p>
+                        <p><i class="fa fa-phone mr-1"></i>+91 9307851903</p>
                     </div>
                     
                </div>
@@ -448,10 +457,12 @@ https://www.tooplate.com/view/2119-gymso-fitness
           </div>
 
           <div class="modal-body">
+            <div id=csrf-token>{% csrf_token %}</div>
+
             <form class="membership-form webform" role="form">
                 <input type="text" class="form-control" name="cf-name" placeholder="John Doe">
 
-                <input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
+                <input type="email" id="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
 
                 <input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
@@ -479,6 +490,49 @@ https://www.tooplate.com/view/2119-gymso-fitness
      <script src="{% static "js/aos.js" %}" ""></script>
      <script src="{% static "js/smoothscroll.js" %}"></script>
      <script src="{% static "js/custom.js" %}"></script>
+    
+     <script>
+        function submitform(){
+            var name = document.getElementById("name").value
+            var email = document.getElementById("email").value
+            var message = document.getElementById("message").value
+
+            $.ajax({
+               
+               type: "POST",
+               url: "/submitform/",
+               data: {
+                 "name": name.toString(),
+                 "email": email.toString(),
+                 "message": message.toString(),
+                 csrfmiddlewaretoken: '{{ csrf_token }}'
+               //   "csrf"
+               },
+               success: function(data){
+                  if (data==='success'){
+         
+                    document.getElementById("name").value = ""
+                    document.getElementById("email").value = ""
+                    document.getElementById("message").value = ""
+                    document.getElementById("alert").style.display = "block"
+                    document.getElementById("alert").innerHTML = "Thank you for your message"
+                    document.getElementById("alert").classList.add("alert");
+                    document.getElementById("alert").classList.add("alert-success");
+                  }
+                  else{
+                    document.getElementById("alert").innerHTML = "Please try again"
+                    document.getElementById("alert").style.display = "block"
+                    document.getElementById("alert").classList.add("alert-danger");
+                    document.getElementById("alert").classList.add("alert");
+                  }
+                  setTimeout(function(){
+                     $('#alert').hide()
+                 }, 3000)
+               }
+             })
+            }
+     </script>
+
 
 </body>
 </html>
