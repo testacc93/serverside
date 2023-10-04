@@ -3,15 +3,15 @@
 <html lang="en">
 <head>
 
-     <title>Servernest- Your concept, Our canvas</title>
+     <title>Custom Website Design Services | Get a Free Consultation Today!</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
+     <meta name="description" content="Looking for custom website design services to achieve your business goals? We offer a variety of website designs, from simple websites to complex sites.">
+     
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <meta name="keywords" content="website design services; web design services in Mumbai; web development services in Mumbai; web development services near me; website; website building; freelancer  ">
      <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
      <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
      <link rel="stylesheet" href="{% static "css/aos.css" %}">
@@ -19,6 +19,80 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="{% static "css/tooplate-gymso-style.css" %}">
     <style>
+        .why-us h2 {
+            position: relative;
+            margin-bottom: 35px;
+        }
+        {% comment %} .why-us h2::after {
+            content: "";
+            width: 120px;
+            height: 3px;
+            display: inline-block;
+            background: #FFC107;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: -20px;
+            margin: 0 auto;
+        } {% endcomment %}
+        
+        .why-us .box {
+            padding: 50px 30px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+            transition: 0.5s;
+            position: relative;
+            background-color: #333;
+            max-height: 230px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .why-us .box:hover {
+            padding: 30px 30px 70px 30px;
+            box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .why-us .box img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0;
+            transition:all ease 1s; 
+        }
+        .why-us .box:hover img {
+            opacity: 1;
+        }
+        .why-us .box span {
+            display: block;
+            font-size: 56px;
+            font-weight: 700;
+            color: #6b6060;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            line-height: normal;
+        }
+        .why-us .box h4 a {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 0;
+            margin: 20px 0;
+            color: #dadada;
+            text-decoration: none;
+        }
+        .why-us .box p {
+            color: #aaaaaa;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        .why-us .box:hover span,
+        .why-us .box:hover h4 a,
+        .why-us .box:hover p {
+              color: #fff;
+        }
         .float{
             position:fixed;
             width:60px;
@@ -36,6 +110,10 @@
         
         .my-float{
             margin-top:16px;
+        }
+        .row img{
+            height:200px;
+            width:100%;
         }
     </style>
 </head>
@@ -204,92 +282,72 @@
                                     </div>
                                 </div>
                             </div>
-
-                            {% comment %} <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
-                                <div class="team-thumb">
-                                    <img src="{% static "images/team/pall.jpg" %}" class="img-fluid" alt="developer">
-
-                                    <div class="team-info d-flex flex-column">
-
-                                        <h3>Sanyam Shah</h3>
-                                        <span>Developer</span>
-
-                                        <ul class="social-icon mt-3">
-                                            <li><a href="#" class="fa fa-instagram"></a></li>
-                                            <li><a href="#" class="fa fa-facebook"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> {% endcomment %}
-
                     </div>
                </div>
      </section>
 
 
      <!-- CLASS -->
-     <section class="class section" id="class">
-               <div class="container">
-                    <div class="row">
-
-                            <div class="col-lg-12 col-12 text-center mb-5">
-                                <h2 data-aos="fade-up" data-aos-delay="200">Our Services</h2>
-                             </div>
-
-                            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
-                                <div class="class-thumb">
-                                    <img src="{% static "images/services/design1.png" %}" class="img-fluid" alt="work">
-
-                                    <div class="class-info">
-                                        <h3 class="mb-1">Designing</h3>
-
-                                        <span><strong>By</strong> - Sanyam</span>
-
-                                        {% comment %} <span class="class-price">$50</span> {% endcomment %}
-
-                                        <p class="mt-3">Elevating brands through visionary design, one pixel at a time.
-                                            Crafting digital experiences that resonate visually and captivate audiences.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
-                                <div class="class-thumb">
-                                    <img src="{% static "images/services/front.png" %}" class="img-fluid" alt="work">
-
-                                    <div class="class-info">
-                                        <h3 class="mb-1">Front end</h3>
-
-                                        <span><strong>By</strong> - Sanyam</span>
-
-                                        {% comment %} <span class="class-price">$66</span> {% endcomment %}
-
-                                        <p class="mt-3">Sculpting seamless user journeys with cutting-edge frontend expertise.
-                                            Bridging design and technology for engaging, responsive digital interfaces.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="class-thumb">
-                                    <img src="{% static "images/services/back1.jpg" %}" class="img-fluid" alt="Class">
-
-                                    <div class="class-info">
-                                        <h3 class="mb-1">Backend and devops</h3>
-
-                                        <span><strong>By</strong> - Ankur</span>
-
-                                        {% comment %} <span class="class-price">$75</span> {% endcomment %}
-
-                                        <p class="mt-3">Powering your digital ambition with robust backend solutions.
-                                            Seamlessly integrating technology to fuel your website's performance</p>
-                                    </div>
-                                </div>
-                            </div>
-
+    <section class="class section" id="class">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center mb-5">
+                        <h2 data-aos="fade-up" data-aos-delay="200">Our Services</h2>
                     </div>
-               </div>
-     </section>
+
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                        <div class="class-thumb">
+                            <img src="{% static "images/services/design1.png" %}" class="img-fluid" alt="work">
+
+                            <div class="class-info">
+                                <h3 class="mb-1">Designing</h3>
+
+                                <span><strong>By</strong> - Sanyam</span>
+
+                                {% comment %} <span class="class-price">$50</span> {% endcomment %}
+
+                                <p class="mt-3">Elevating brands through visionary design, one pixel at a time.
+                                    Crafting digital experiences that resonate visually and captivate audiences.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                        <div class="class-thumb">
+                            <img src="{% static "images/services/front.png" %}" class="img-fluid" alt="work">
+
+                            <div class="class-info">
+                                <h3 class="mb-1">Front end</h3>
+
+                                <span><strong>By</strong> - Sanyam</span>
+
+                                {% comment %} <span class="class-price">$66</span> {% endcomment %}
+
+                                <p class="mt-3">Sculpting seamless user journeys with cutting-edge frontend expertise.
+                                    Bridging design and technology for engaging, responsive digital interfaces.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                        <div class="class-thumb">
+                            <img src="{% static "images/services/back1.jpg" %}" class="img-fluid" alt="Class">
+
+                            <div class="class-info">
+                                <h3 class="mb-1">Backend and devops</h3>
+
+                                <span><strong>By</strong> - Ankur</span>
+
+                                {% comment %} <span class="class-price">$75</span> {% endcomment %}
+
+                                <p class="mt-3">Powering your digital ambition with robust backend solutions.
+                                    Seamlessly integrating technology to fuel your website's performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
     <section class="class section" id="work">
         <div class="container">
@@ -297,7 +355,7 @@
                      <div class="col-lg-12 col-12 text-center mb-5">
                          <h2 data-aos="fade-up" data-aos-delay="200">Our work</h2>
                       </div>
-                      <div class="col-lg-12 col-12 text-center mb-5">
+                      {% comment %} <div class="col-lg-12 col-12 text-center mb-5">
                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -327,122 +385,111 @@
                           <span class="sr-only">Next</span>
                         </a>
                         
-                      </div>
+                      </div> {% endcomment %}
+
+                      <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400" style="margin-bottom: 72px;">
+                        <div class="class-thumb">
+                            <img src="{% static "images/work/work1.jpeg" %}" class="img-fluid" alt="work">
+
+                            <div class="class-info">
+                               <h3 class="mb-1">AFlatmate</h3>
+                                <p class="mt-3">A user friendly platform where one can find flats and flatmates without any brokerage.</p>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500" style="margin-bottom: 72px;">
+                        <div class="class-thumb">
+                            <img src="{% static "images/work/work2.jpeg" %}" class="img-fluid" alt="work">
+
+                            <div class="class-info">
+                                <h3 class="mb-1">Sunelec Pvt. Ltd.</h3>
+                                <p class="mt-3">Solar consulting company having excelled in solar installation and consultation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600" style="margin-bottom: 72px;">
+                        <div class="class-thumb">
+                            <img src="{% static "images/work/work3.jpeg" %}" class="img-fluid" alt="Class">
+                            <div class="class-info">
+                                <h3 class="mb-1">DRDIP</h3>
+                                <p class="mt-3">A platform to keep the track of progress of any government project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600" style="margin-bottom: 72px;">
+                        <div class="class-thumb">
+                            <img src="{% static "images/work/work4.jpeg" %}" class="img-fluid" alt="Class">
+                            <div class="class-info">
+                                <h3 class="mb-1">JK Analysis</h3>
+                                <p class="mt-3">A platform to analyse sales' data for different areas, regions and states.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600" style="margin-bottom: 72px;">
+                        <div class="class-thumb">
+                            <img src="{% static "images/work/snacks.jpeg" %}" class="img-fluid" alt="Class">
+                            <div class="class-info">
+                                <h3 class="mb-1">Abhay snacks</h3>
+                                <p class="mt-3">Management of products got very easy with this custom website for a snacks company.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600" style="margin-bottom: 72px;">
+                        <div class="class-thumb">
+                            <img src="{% static "images/work/chat.jpeg" %}" class="img-fluid" alt="Class">
+                            <div class="class-info">
+                                <h3 class="mb-1">Chat application</h3>
+                                <p class="mt-3">A real time chat application integrated with Chatgpt for a client demo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
              </div>
         </div>
     </section>
-
-
-     <!-- SCHEDULE -->
-     {% comment %} <section class="schedule section" id="schedule">
-               <div class="container">
-                    <div class="row">
-
-                            <div class="col-lg-12 col-12 text-center">
-                                <h6 data-aos="fade-up">our weekly GYM schedules</h6>
-
-                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Workout Timetable</h2>
-                             </div>
-
-                             <div class="col-lg-12 py-5 col-md-12 col-12">
-                                 <table class="table table-bordered table-responsive schedule-table" data-aos="fade-up" data-aos-delay="300">
-
-                                     <thead class="thead-light">
-                                         <th><i class="fa fa-calendar"></i></th>
-                                         <th>Mon</th>
-                                         <th>Tue</th>
-                                         <th>Wed</th>
-                                         <th>Thu</th>
-                                         <th>Fri</th>
-                                         <th>Sat</th>
-                                     </thead>
-
-                                     <tbody>
-                                         <tr>
-                                            <td><small>7:00 am</small></td>
-                                            <td>
-                                                <strong>Cardio</strong>
-                                                <span>7:00 am - 9:00 am</span>
-                                            </td>
-                                            <td>
-                                                <strong>Power Fitness</strong>
-                                                <span>7:00 am - 9:00 am</span>
-                                            </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>
-                                                <strong>Yoga Section</strong>
-                                                <span>7:00 am - 9:00 am</span>
-                                            </td>
-                                         </tr>
-
-                                         <tr>
-                                            <td><small>9:00 am</small></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>
-                                                <strong>Boxing</strong>
-                                                <span>8:00 am - 9:00 am</span>
-                                            </td>
-                                            <td>
-                                                <strong>Areobic</strong>
-                                                <span>8:00 am - 9:00 am</span>
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <strong>Cardio</strong>
-                                                <span>8:00 am - 9:00 am</span>
-                                            </td>
-                                         </tr>
-
-                                         <tr>
-                                            <td><small>11:00 am</small></td>
-                                            <td></td>
-                                            <td>
-                                                <strong>Boxing</strong>
-                                                <span>11:00 am - 2:00 pm</span>
-                                            </td>
-                                            <td>
-                                                <strong>Areobic</strong>
-                                                <span>11:30 am - 3:30 pm</span>
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <strong>Body work</strong>
-                                                <span>11:50 am - 5:20 pm</span>
-                                            </td>
-                                         </tr>
-
-                                         <tr>
-                                            <td><small>2:00 pm</small></td>
-                                            <td>
-                                                <strong>Boxing</strong>
-                                                <span>2:00 pm - 4:00 pm</span>
-                                            </td>
-                                            <td>
-                                                <strong>Power lifting</strong>
-                                                <span>3:00 pm - 6:00 pm</span>
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <strong>Cardio</strong>
-                                                <span>6:00 pm - 9:00 pm</span>
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <strong>Crossfit</strong>
-                                                <span>5:00 pm - 7:00 pm</span>
-                                            </td>
-                                         </tr>
-                                     </tbody>
-                                 </table>
-                             </div>
-
+    {% comment %} <section class="class section" id=""> {% endcomment %}
+        <section class="why-us class section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <h2 class="mt-5 text-center">Why Choose Us</h2>
                     </div>
-               </div>
-     </section> {% endcomment %}
+                </div>
+    
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="box">
+                            <span>01</span>
+                            <h4><a href="#">Budget friendly</a></h4>
+                            <p>We are freelanceers working from home therefore, we don't have to pay rent hence reducing our prices.</p>
+                            {% comment %} <img src="/images/image-one.jpg" alt=""> {% endcomment %}
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="box">
+                            <span>02</span>
+                            <h4><a href="#">Customer is priority</a></h4>
+                            <p>We are starting and yet to build trust, which is why we treat our clients as king/queen.</p>
+                            <img src="/images/image-five.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="box">
+                            <span>03</span>
+                            <h4><a href="#">Free support</a></h4>
+                            <p>Our clients enjoy free 1 year support. Get changes done at no cost for 1 whole year. No need to thank us.</p>
+                            <img src="/images/image-six.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+{% comment %} </section> {% endcomment %}
 
 
      <!-- CONTACT -->
@@ -470,12 +517,7 @@
                         <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
 
                         <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> Mumbai, Maharashtra, India</p>
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
+
                         <div class="google-map" data-aos="fade-up" data-aos-delay="900">
                            {% comment %} <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe> {% endcomment %}
 
